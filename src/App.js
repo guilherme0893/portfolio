@@ -1,25 +1,71 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/styles.css';
+import { Route, Switch } from 'react-router-dom';
+import React from 'react';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Formulario from './pages/Formulario';
+import NotFound from './pages/NotFound';
+import repos from './data/repos';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      repositories: [],
+      repoOnScreen: '',
+    };
+  }
+
+  // componentDidMount() {
+  //   const reposArray = repos.map((repo) => ({
+  //     name: repo.name,
+  //     id: repo.id,
+  //   }))
+  //   // console.log(reposArray);
+  //   this.setState({repositories: reposArray, repoOnScreen: reposArray[0].name})
+  //   // console.log(reposArray[0]);
+  // }
+
+  // handleOnChange = ({target: {value}}) => {
+  //   // console.log(value);
+  //   this.setState({repoOnScreen: value})
+  // }
+
+  render() {
+    const {repositories, repoOnScreen} = this.state;
+    return (
+      <>
+        <Navbar 
+          repositories={repositories}
+          handleOnChange={this.handleOnChange}
+        />
+        <Switch>
+          <Route 
+            exact path="/"
+            component={Home} />
+          <Route 
+            exact path="/about"
+            render={(props) => 
+            <About name="name" {...props} />}
+          />
+          <Route
+            exact path="/portfolio"
+            render={() => <Portfolio repoOnScreen={repoOnScreen}/>}/>
+          <Route 
+            exact path="/form"
+            component={Formulario} />
+          <Route 
+            path="*"
+            component={NotFound}
+          />
+        </Switch>
+        <Footer />
+      </>      
+    );
+  }
 }
 
 export default App;
