@@ -43,12 +43,12 @@ export default class Navbar extends Component {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-NavLink" to="/about" activeClassName="selected">
+                <NavLink className="nav-NavLink" exact to="/about" activeClassName="selected">
                   About
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-NavLink " to="/projects" activeClassName="selected">
+                <NavLink className="nav-NavLink " exact to="/projects" activeClassName="selected">
                   Projects
                 </NavLink>
               </li>

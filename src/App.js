@@ -55,7 +55,7 @@ class App extends React.Component{
             exact path="/projects"
             render={() => <Portfolio repoOnScreen={repoOnScreen}/>}/>
           <Route 
-            path="/*"
+            path="*"
             component={NotFound}
           />
         </Switch>

@@ -14,7 +14,7 @@ class Home extends Component {
                   <h1 className="display-5 fw-bolder text-white mb-3">
                     Welcome to my online repository!
                   </h1>
-                  <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                  {/* <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
                     <a
                       className="btn btn-success btn-lg px-4 me-sm-3"
                       href="/projects"
@@ -26,7 +26,7 @@ class Home extends Component {
                       href="/about">
                       About me
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
