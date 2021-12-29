@@ -44,9 +44,6 @@ class App extends React.Component{
         />
         <Switch>
           <Route 
-            exact path={process.env.PUBLIC_URL + '/'}
-            component={Home} />
-          <Route 
             exact path="/about"
             render={(props) => 
             <About name="name" {...props} />}
@@ -60,6 +57,10 @@ class App extends React.Component{
           <Route 
             path="*"
             component={NotFound}
+          />
+          <Route 
+            path={process.env.PUBLIC_URL + '/'}
+            component={Home}
           />
         </Switch>
         <Footer />
