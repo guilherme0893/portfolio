@@ -7,7 +7,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import NotFound from './pages/NotFound';
-import MediaQuery from 'react-responsive';
 
 class App extends React.Component{
   constructor(props) {
@@ -37,30 +36,28 @@ class App extends React.Component{
     const {repositories, repoOnScreen} = this.state;
     return (
       <>
-        <MediaQuery minWidth={400}>
-          <Navbar 
-            repositories={repositories}
-            handleOnChange={this.handleOnChange}
+        <Navbar 
+          repositories={repositories}
+          handleOnChange={this.handleOnChange}
+        />
+        <Switch>
+          <Route 
+            exact path="/portfolio"
+            component={Home} />
+          <Route 
+            path="/about"
+            render={(props) => 
+            <About name="name" {...props} />}
           />
-          <Switch>
-            <Route 
-              exact path="/portfolio"
-              component={Home} />
-            <Route 
-              path="/about"
-              render={(props) => 
-              <About name="name" {...props} />}
-            />
-            <Route
-              exact path="/projects"
-              render={() => <Portfolio repoOnScreen={repoOnScreen}/>}/>
-            <Route 
-              path="*"
-              component={NotFound}
-            />
-          </Switch>
-          <Footer />
-        </MediaQuery>
+          <Route
+            exact path="/projects"
+            render={() => <Portfolio repoOnScreen={repoOnScreen}/>}/>
+          <Route 
+            path="*"
+            component={NotFound}
+          />
+        </Switch>
+        <Footer />
       </>      
     );
   }
