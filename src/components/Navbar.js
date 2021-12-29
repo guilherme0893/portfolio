@@ -38,7 +38,7 @@ export default class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink className="nav-NavLink" exact to="/" activeClassName="selected">
+                <NavLink className="nav-NavLink" exact to="/portfolio" activeClassName="selected">
                   Home
                 </NavLink>
               </li>
@@ -48,7 +48,7 @@ export default class Navbar extends Component {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-NavLink " to="/portfolio" activeClassName="selected">
+                <NavLink className="nav-NavLink " to="/projects" activeClassName="selected">
                   Projects
                 </NavLink>
               </li>

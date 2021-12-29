@@ -52,13 +52,10 @@ class App extends React.Component{
             <About name="name" {...props} />}
           />
           <Route
-            exact path="/portfolio"
+            exact path="/projects"
             render={() => <Portfolio repoOnScreen={repoOnScreen}/>}/>
           <Route 
-            exact path="/form"
-            component={Formulario} />
-          <Route 
-            path="*"
+            path="/*"
             component={NotFound}
           />
         </Switch>
