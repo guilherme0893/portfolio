@@ -17,21 +17,6 @@ class App extends React.Component{
     };
   }
 
-  // componentDidMount() {
-  //   const reposArray = repos.map((repo) => ({
-  //     name: repo.name,
-  //     id: repo.id,
-  //   }))
-  //   // console.log(reposArray);
-  //   this.setState({repositories: reposArray, repoOnScreen: reposArray[0].name})
-  //   // console.log(reposArray[0]);
-  // }
-
-  // handleOnChange = ({target: {value}}) => {
-  //   // console.log(value);
-  //   this.setState({repoOnScreen: value})
-  // }
-
   render() {
     const {repositories, repoOnScreen} = this.state;
     return (
