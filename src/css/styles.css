@@ -524,6 +524,7 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+  text-align: justify;
 }
 
 .display-1 {
@@ -636,6 +637,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  border: 5px solid white;
 }
 
 .img-thumbnail {
@@ -11726,4 +11728,8 @@ html {
 
 .bi-linkedin {
   font-size: 2em;
+}
+
+.main-h3{
+  color: white;
 }

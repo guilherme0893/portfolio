@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import foto from '/home/guilhermeduarte/portfolio/portfolio/src/foto.jpg'
 
 class Home extends Component {
   render() {
@@ -14,6 +15,7 @@ class Home extends Component {
                   <h1 className="display-5 fw-bolder text-white mb-3">
                     Welcome to my online repository!
                   </h1>
+                  <h3 className="main-h3">Feel free to explore all around here!</h3>
                   {/* <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
                     <a
                       className="btn btn-success btn-lg px-4 me-sm-3"
@@ -32,7 +34,7 @@ class Home extends Component {
               <div className="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
                 <img
                   className="img-fluid rounded-3 my-5"
-                  // src={require('../')}
+                  src={foto}
                   alt="Guilherme"
                 />
               </div>

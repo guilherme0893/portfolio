@@ -52,8 +52,8 @@ class Portfolio extends Component {
               <section className="py-5">
                 <div className="container px-5 my-5">
                   <div className="text-center mb-5">
-                    <h1 className="fw-bolder">My adventures</h1>
-                    <p className="lead fw-normal text-muted mb-0">from my Github Portfolio!</p>
+                    <h1 className="fw-bolder">Some adventures hosted on my Github Portfolio!</h1>
+                    <h3 className="fw-normal text-muted mb-0">Many surprises are coming ahead</h3>
                   </div>
                   {repositories.map(repository =>
                         <div class="card" style={{ marginBottom: '12px' }} key={repository.id}>
