@@ -44,7 +44,7 @@ class App extends React.Component{
         />
         <Switch>
           <Route 
-            exact path="/"
+            exact path="/portfolio"
             component={Home} />
           <Route 
             path="/about"
