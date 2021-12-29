@@ -44,7 +44,7 @@ class App extends React.Component{
         />
         <Switch>
           <Route 
-            exact path="/"
+            exact path={process.env.PUBLIC_URL + '/'}
             component={Home} />
           <Route 
             exact path="/about"
