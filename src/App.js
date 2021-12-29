@@ -6,9 +6,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
-import Formulario from './pages/Formulario';
 import NotFound from './pages/NotFound';
-import repos from './data/repos';
 
 class App extends React.Component{
   constructor(props) {
@@ -44,23 +42,20 @@ class App extends React.Component{
         />
         <Switch>
           <Route 
+            exact path="/portfolio"
+            component={Home}
+          />
+          <Route 
             exact path="/about"
             render={(props) => 
             <About name="name" {...props} />}
           />
           <Route
-            exact path="/portfolio"
+            exact path="/projects"
             render={() => <Portfolio repoOnScreen={repoOnScreen}/>}/>
-          <Route 
-            exact path="/form"
-            component={Formulario} />
           <Route 
             path="*"
             component={NotFound}
-          />
-          <Route 
-            path={process.env.PUBLIC_URL + '/'}
-            component={Home}
           />
         </Switch>
         <Footer />
