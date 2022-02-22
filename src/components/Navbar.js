@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Navbar as BootstrapNavbar, NavDropdown, Nav } from 'react-bootstrap'
+import { Navbar as BootstrapNavbar, Nav } from 'react-bootstrap'
 
 export default class Navbar extends Component {
   render() {
-    const {repositories, handleOnChange}=this.props;
     return (
       <>
         <BootstrapNavbar className="navbar navbar-expand-lg navbar-dark bg-dark mediaQuery">

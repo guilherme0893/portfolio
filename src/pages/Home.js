@@ -3,7 +3,6 @@ import foto from '/home/guilhermeduarte/portfolio/portfolio/src/foto.jpg'
 
 class Home extends Component {
   render() {
-    // console.log(this.props)
     return (
      <>
       <main className="flex-shrink-0">
@@ -16,19 +15,6 @@ class Home extends Component {
                     Welcome to my online repository!
                   </h1>
                   <h3 className="main-h3">Feel free to explore all around here!</h3>
-                  {/* <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                    <a
-                      className="btn btn-success btn-lg px-4 me-sm-3"
-                      href="/projects"
-                    >
-                      Projects
-                    </a>
-                    <a 
-                      className="btn btn-success btn-lg px-4 me-sm-3" 
-                      href="/about">
-                      About me
-                    </a>
-                  </div> */}
                 </div>
               </div>
               <div className="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
@@ -65,7 +51,10 @@ class Home extends Component {
                   </div>
                   <div className="col mb-5 h-100">
                     <div className="feature bg-success bg-gradient text-white rounded-3 mb-3">
-                      <i class="bi bi-lock-fill"></i>
+                      <i class="bi bi-unlock-fill"></i>
+                    </div>
+                    <div className="feature bg-success bg-gradient text-white rounded-3 mb-3 checkDiv">
+                      <i className="bi bi-check-circle"></i>
                     </div>
                     <h2 className="h5">Module 2 - Front-end Development</h2>
                     <p className="mb-0">

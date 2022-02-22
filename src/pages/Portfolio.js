@@ -16,37 +16,27 @@ class Portfolio extends Component {
     this.setState({isLoading: true})
     const endpoint = `https://api.github.com/users/guilherme0893/repos`;
     const response = await fetch(endpoint).then(response => response.json());
-    // console.log(response)
     this.setState({repositories: response, isLoading: false})
   }
 
   componentDidMount() {
-    // const {repoOnScreen}=this.props;
     this.getGitHubInfo()
   }
-
-  // componentDidUpdate(prevProps) {
-  //   const {repoOnScreen} = this.props;
-  //   // console.log(prevProps.repoOnScreen)
-  //   // console.log(repoOnScreen)
-  //   if (prevProps.repoOnScreen !== repoOnScreen){
-  //     this.getGitHubInfo();
-  //   }
-  // }
 
   render() {
     const {repositories, isLoading}=this.state;
     return (
       <>
         {
-          isLoading ? <div style={{ minWidth: '100%', minHeight: '100%', position: 'fixed', display: 'flex', opacity: '0.7', top: '30', alignItems: 'center', justifyContent: 'center' }}>
-            <Loader
-              type="Grid"
-              color="#00BFFF"
-              height={100}
-              width={100}
-              timeout={2000} //2 secs
-            />
+          isLoading ? 
+            <div style={{ minWidth: '100%', minHeight: '100%', position: 'fixed', display: 'flex', opacity: '0.7', top: '30', alignItems: 'center', justifyContent: 'center' }}>
+              <Loader
+                type="Grid"
+                color="#00BFFF"
+                height={100}
+                width={100}
+                timeout={2000} //2 secs
+              />
           </div> :
             <main className="flex-shrink-0">
               <section className="py-5">
