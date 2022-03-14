@@ -16,7 +16,8 @@ class Portfolio extends Component {
     this.setState({isLoading: true})
     const endpoint = `https://api.github.com/users/guilherme0893/repos`;
     const response = await fetch(endpoint).then(response => response.json());
-    this.setState({repositories: response, isLoading: false})
+    const filtrado = response.filter((repo) => repo.name !== 'Know_the_country' && repo.name !== 'guilherme0893'); // seria possível usar um includes ou passar um array de nomes?
+    this.setState({repositories: filtrado, isLoading: false})
   }
 
   componentDidMount() {

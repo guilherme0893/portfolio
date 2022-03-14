@@ -33,7 +33,7 @@ class Home extends Component {
               <div className="col-lg-4 mb-5 mb-lg-0">
                 <h2 className="fw-bolder mb-0">My journey at Trybe</h2>
                 <br></br>
-                <h3>Click <a href="https://github.com/Guilherme0893/trybe-exercicios" target="_blank"> here </a> to know more about the modules and what expects me in the next months</h3>
+                <h3>Click <a href="https://github.com/Guilherme0893/trybe-exercicios" target="blank"> here </a> to know more about the modules and what expects me in the next months</h3>
               </div>
               <div className="col-lg-8">
                 <div className="row gx-5 row-cols-1 row-cols-md-2">
@@ -51,11 +51,10 @@ class Home extends Component {
                   </div>
                   <div className="col mb-5 h-100">
                     <div className="feature bg-success bg-gradient text-white rounded-3 mb-3">
-                      <i class="bi bi-unlock-fill"></i>
+                    <i className="bi bi-unlock-fill"></i>
                     </div>
                     <div className="feature bg-success bg-gradient text-white rounded-3 mb-3 checkDiv">
-                      <i className="bi bi-check-circle"></i>
-                    </div>
+                      <i className="bi bi-check-circle"></i>                    </div>
                     <h2 className="h5">Module 2 - Front-end Development</h2>
                     <p className="mb-0">
                       Introduction to React, RTL, Redux, React Hooks and more.
