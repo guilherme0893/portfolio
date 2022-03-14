@@ -37,7 +37,7 @@ class About extends React.Component {
                           <br>
                           </br>
                           <div className="div-icons">
-                            <a href="https://www.linkedin.com/in/guilherme--duarte/" target="_blank"><i className="bi bi-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/guilherme-duarte-164865a7/" target="_blank"><i className="bi bi-linkedin"></i></a>
                           </div>
                         </p>
                       </div>
