@@ -51,7 +51,7 @@ class Portfolio extends Component {
                           <div class="card-body">
                             <h5 class="card-title">{repository.name}</h5>
                             <p class="card-text"><b>Acess status:</b> {repository.private ? 'Private' : 'Public'}</p>
-                            <p class="card-text"><b>Take a look here:</b> <a href={repository.html_url}>{repository.html_url}</a></p>
+                            <p class="card-text"><b>Take a look here:</b> <a href={repository.html_url} target="blank">{repository.html_url}</a></p>
                             <br />
                           </div>
                         </div>
