@@ -1,8 +1,6 @@
 import '../css/styles.css';
 import React from 'react';
 import CV from '../components/CV';
-// import TeamMember from '../components/TeamMember';
-// import ListMember from '../components/ListMember';
 
 class About extends React.Component {
   render() {

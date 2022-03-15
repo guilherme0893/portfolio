@@ -11,7 +11,7 @@ export default class Navbar extends Component {
           <BootstrapNavbar.Collapse>
             <Nav>
               <div className="container px-5">
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <div className="collapse navbar-collapse mb-2" id="navbarSupportedContent">
                   <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li className="nav-item">
                       <NavLink className="nav-NavLink" exact to="/portfolio" activeClassName="selected">

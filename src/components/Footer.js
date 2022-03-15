@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-dark py-4 mt-auto">
       <div className="container px-5">
-        <div className="row align-items-center justify-content-between flex-column flex-sm-row">
+        <div className="row justify-content-center flex-column flex-sm-row">
           <div className="col-auto">
             <div className="small m-0 text-white">
               Copyright &copy; Guilherme Duarte 2021
